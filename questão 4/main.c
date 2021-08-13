@@ -45,7 +45,7 @@ int main(){
         */
         
     }
-    //o programa inverte a ordem dos números digitados  
+    //o programa inverte a ordem dos números digitados    
    
  return 0;
 }
