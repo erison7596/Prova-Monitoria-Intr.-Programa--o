@@ -17,6 +17,6 @@ abaixo estará um explicação com código para melhor entendimento */
      
      printf("tamanho da variável short int em bytes: %zu\n", sizeof(var));
      /*como mostrado com print, podemos ver que short int irá retornar uma variável menor que a int pelo simples motivo
-     de termos usado o short antes do int, isso faz com que a variável declarada tenha uma porção do valor de int*/
+     de termos usado o short antes do int, isso faz com que a variável declarada tenha uma porção do valor de int*/ 
      return 0;
  }
