@@ -2,7 +2,7 @@
 #include <stdio.h>
 //aqui foram passados como passagem por referência, que a referência das variaveis podendo sobrescrever
 void Prepara(const char *str, int **pt){
-    //static int define que a variavel abaixo são permanentes, logo seu valor será guardado para a proxima vex que for chamado
+    //static int define que a variavel abaixo são permanentes, logo seu valor será guardado para a proxima vez que for chamado
     static int ar[5] = {1, 2, 1, 2, 1};
     int i;
     //como não tem {} só ira pegar na primeira linha o for 
@@ -12,8 +12,6 @@ void Prepara(const char *str, int **pt){
     
     *pt = ar;//aqui passamos o endereço de ar para pt
     
-    //printf("%d", ar[1]);
-   // printf("\n\n%d", *(pt));
 }
 int main(){
     int v[5];
@@ -27,7 +25,6 @@ int main(){
    // printf("%d",*p);
 
     q = p + 5; //p será o primeiro digito que entrou, mas q será 0, pq ele somou p+ 5, avançando 5 endereços de memória, logo estará no digito 6, que não existe, logo q será 0
-   // printf("\n%d",*q);
     c = 0;//c==0 como mostra 
     int d;
     while(q - p != 0){//0 - o primeiro digito diferente de 0
@@ -48,7 +45,7 @@ int main(){
         */
         
     }
-    //assim o programa inverte a ordem dos números digitados 
+    //o programa inverte a ordem dos números digitados  
    
  return 0;
 }
